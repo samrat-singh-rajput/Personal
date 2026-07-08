@@ -58,4 +58,3 @@ You may view and study this project for educational and learning purposes. Any r
 
 *   **Developer:** Anuj Singh Rajput
 *   **Project:** MY Portfolio
-*   **Original Template Attribution:** "Personal" template designed by [BootstrapMade](https://bootstrapmade.com/) under the free license (requires keeping footer credits intact).
