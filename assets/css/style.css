@@ -9,6 +9,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -128,23 +134,73 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  #header h1 {
-    font-size: 36px;
+  body::before {
+    background-position: right bottom;
+    background-size: auto 50dvh;
+    height: 100dvh;
   }
 
-  #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+  #header {
+    height: 100dvh;
   }
 
-  #header .social-links {
+  #header:not(.header-top) h1 {
+    font-size: 38px;
+  }
+
+  #header:not(.header-top) h2 {
+    font-size: 18px;
+    line-height: 26px;
     margin-top: 15px;
   }
 
-  #header .container {
+  #header:not(.header-top) .social-links {
+    margin-top: 25px;
+  }
+
+  #header:not(.header-top) .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background-position: right bottom;
+    background-size: auto 45dvh;
+  }
+
+  #header:not(.header-top) h1 {
+    font-size: 32px;
+  }
+
+  #header:not(.header-top) h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  body::before {
+    background-position: right bottom;
+    background-size: auto 40dvh;
+  }
+
+  #header:not(.header-top) h1 {
+    font-size: 28px;
+  }
+
+  #header:not(.header-top) h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #header:not(.header-top) .social-links {
+    margin-top: 15px;
   }
 }
 
