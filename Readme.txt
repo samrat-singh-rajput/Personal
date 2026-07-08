@@ -1,6 +1,6 @@
-# Personal Portfolio Website Template
+# Personal Portfolio Website - Anuj Singh Rajput
 
-A beautiful, professional, responsive, and animated single-page resume and portfolio website template.
+A beautiful, optimized, responsive, and animated single-page professional resume and portfolio website.
 
 ---
 
@@ -10,39 +10,25 @@ A beautiful, professional, responsive, and animated single-page resume and portf
 *   **HTML5 & CSS3:** Structure and responsive styling (custom rules in assets/css/style.css).
 *   **Bootstrap v5.3.2:** Responsive CSS grid framework.
 *   **Google Fonts:** Open Sans, Raleway, Poppins.
-*   **Custom JavaScript:** Scroll logic, sections display, mobile menu, and initialization (assets/js/main.js).
+*   **Custom JavaScript:** Scroll animations, sections displays, mobile menu toggle, and initialization (assets/js/main.js).
 
 ### Third-Party Assets & Plugins (under assets/vendor/)
-*   **Swiper:** Responsive testimonials and portfolio details sliders.
-*   **GLightbox:** Lightbox library for viewing images/videos in modals.
-*   **Isotope Layout:** Interactive filtering and sorting for portfolio items.
-*   **PureCounter:** Numerical counter animations.
-*   **Waypoints:** Triggering animations on scroll.
+*   **PureCounter:** Numerical counter animations (e.g. CGPA, certifications).
+*   **Waypoints:** Triggering scroll-based animations (e.g. skills progress bars).
 *   **Icons:** Bootstrap Icons, Boxicons, and Remixicon.
-
-### Backend Layer
-*   **PHP:** Handles AJAX contact form submission (forms/contact.php).
-*   **Validation Client:** Client-side validator (assets/vendor/php-email-form/validate.js).
-
----
-
-## 📬 Contact Form Configuration
-
-We have implemented a native PHP mail() fallback function in forms/contact.php. 
-To use this contact form:
-1. Open forms/contact.php.
-2. Find the line: $receiving_email_address = 'contact@example.com';
-3. Replace 'contact@example.com' with your actual receiving email address.
-4. Ensure your server environment supports standard PHP mail configuration.
 
 ---
 
 ## 📂 Project Structure
 
-*   index.html - The main single-page website.
-*   portfolio-details.html - Sample detailed view for portfolio items.
-*   forms/ - Contact form submission backend.
-*   assets/ - CSS styles, images, JavaScript, and third-party vendors.
+*   **index.html:** The main single-page portfolio website.
+*   **assets/css/style.css:** Main theme styles, dark layout, and neon background configurations.
+*   **assets/js/main.js:** Navigation handlers, mobile toggle, and scroll animation scripts.
+*   **assets/img/:** Contains design assets:
+    *   `me.png` - About profile photo.
+    *   `bg.png` - Custom homepage background wallpaper (landscape).
+    *   `favicon.png` & `apple-touch-icon.png` - Website tab icons.
+*   **assets/vendor/:** Lightweight third-party libraries (Bootstrap, Remixicons, Boxicons, Waypoints, PureCounter).
 
 ---
 
